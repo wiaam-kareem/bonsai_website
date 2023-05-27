@@ -1,17 +1,68 @@
+:root{
+    --primary-color:#00b289;
+    --background-color:white;
+    --heading-text-color:#003c2f;
+    --regular-text-color:#65816d;
+    --caption-text-color:#808080;
+    --caption-text-color-lighter:#bab9b9;
+    --secondary-color:#f3fbff;
+    --occordion-color-hover:#f9f9f9;
+    /* font sizes */
+    --fs-6xl:2.6rem;
+    --fs-5xl:2.4rem;
+    --fs-4xl:2.2rem;
+    --fs-3xl:2.2rem;
+    --fs-2xl:2rem;
+    --fs-1xl:1.8rem;
+    --fs-large:1.6rem;
+    --fs-small:1.4rem;
+    --fs-xsmall:1.2rem;
+    --fs-2xsmall:1rem;
+    --fs-3xsmall:0.8rem;
+    --fs-4xsmall:0.6rem;
+    --page-width-ratio:75vw;
+    /* padding and margins */
+    --p-m-01:10px;
+    --p-m-12:12px;
+    --p-m-10:10px;
+    --p-m-14:14px;
+    --p-m-16:16px;
+    --p-m-20:20px;
+    --p-m-30:30px;
+    --p-m-35:35px;
+    --p-m-50:50px;
+    --p-m-120:120px;
+    /* border radius */
+    --regular-border-radius:5px;
+}
+
+
+
 *{
     padding: 0;
     margin: 0;
 }
-#add-on{
-    margin-bottom: 50px;
+
+.container{
+    width:var(--page-width-ratio);
+    margin-left: auto;
+    margin-right: auto;
 }
-#add-on .title{
+
+.special-text{
+    color: var(--primary-color);
+}
+
+#add-on{
+    margin-bottom: var(--p-m-50);
+}
+#add-on h3{
     
     text-align: center;
-    font-size: 30px;
-    color: #4d4d4d;
+    font-size: var(--fs-large);
+    color: var(--regular-text-color);
     font-weight: 200;
-    margin-bottom: 30px;
+    margin-bottom:var(--p-m-30) ;
 
 
 }
@@ -19,47 +70,41 @@
     display: flex;
     justify-content: space-between;
     
-    padding: 35px 30px 35px 30px;
-    border-radius: 5px;
+    padding: var(--p-m-35) var(--p-m-30);
+    border-radius: var(--regular-border-radius);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin-bottom: 20px;
+    margin-bottom: var(--p-m-20);
 }
 #add-on .content h2{
-    color: #585858;
-    margin-bottom: 10px;
+    color: var(--heading-text-color);
+    margin-bottom: var(--p-m-10);
 }
 #add-on .content p{
-    color:#616161;
+    color:var(--regular-text-color);
 }
 #add-on .pricing{
     font-size: xx-large;
     font-weight: 800;
-    color: #585858;
+    color: var(--heading-text-color);
 }
 #add-on .pricing-period{
-    font-size: 20px;
+    font-size: var(--fs-2xsmall);
     font-weight: 500;
 
 }
-.container{
-    width:70%;
-    
-    margin-left: auto;
-    margin-right: auto;
-}
 #offer{
-    background-color: #f3fbff;
+    background-color:var(--secondary-color);
     display: flex;
     justify-content: space-between;
-    padding:120px 50px 120px 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding:var(--p-m-120) var(--p-m-50);
+    margin-top: var(--p-m-50);
+    margin-bottom: var(--p-m-50);
     align-items: center;
 }
 #offer button{
-    background-color: #00b289;
+    background-color: var(--primary-color);
     border: none;
-    padding: 0 50px 0 50px;
+    padding: 0 var(--p-m-50) 0 var(--p-m-50);
     border-radius: 3px;
     color: #f3fbff;
     font-weight: 800;
@@ -70,19 +115,19 @@
 }
 
 #offer p{
-    font-size: 40px;
-    color:rgb(83, 82, 82) ;
+    font-size: var(--fs-6xl);
+    color:var(--heading-text-color) ;
     
 }
 #faq{
-    margin-bottom: 50px;
+    margin-bottom: var(--p-m-50);
 }
 #faq .title{
     text-align: center;
-    font-size: 30px;
-    color: #00b289;
+    font-size: var(--fs-2xl);
+    color: var(--primary-color);
     font-weight: 200;
-    margin-bottom: 30px;
+    margin-bottom: var(--p-m-30);
 }
 .occordion_title{
     display: flex;
@@ -91,58 +136,56 @@
 
 .accordion {
     color: #616161;
-    background-color: white;
+    background-color: var(--background-color);
     cursor: pointer;
-    padding: 15px;
+    padding: var(--p-m-16);
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 22px;
+    font-size: var(--fs-small);
     transition: 0.5s;
   }
   
   .active, .accordion:hover {
-    background-color: #f9f9f9; 
+    background-color:var(--occordion-color-hover) ; 
   }
   
   .panel {
-    padding: 0 18px;
+    padding: var(--p-m-10) var(--p-m-20);
     display: none;
-    background-color: white;
+    background-color:var(--background-color);
     overflow: hidden;
   }
   .accordion i{
-    font-size:24px;color:#dadbda
+    font-size:var(--fs-large);
+    color:var(--caption-text-color-lighter)
   }
 
-  
+  footer{
+    margin-bottom: var(--p-m-50);
+  }
    footer .flex-container{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 50px;
     }
     footer .title{
-        font-size: 18px;
-        margin-bottom: 35px;
+        font-size: var(--fs-2xsmall);
+        margin-bottom: var(--p-m-35);
         font-weight: 600;
         text-transform: uppercase;
-        color: rgb(91, 91, 91);
+        color: var(--regular-text-color);
     }
-    footer .content ul {
+    footer  ul {
         list-style: none; 
     }
-    footer .content ul li{
+    footer .content  li{
         margin-bottom: 10px;
     }
-    footer .content ul li a{
-    font-size: 18px;
-    color: #888988;
+    footer a{
+    font-size: var(--fs-2xsmall);
+    color: var(--regular-text-color);
     text-decoration: none;
     
 }
  
-
-.special-text{
-    color: #00b289;
-}
