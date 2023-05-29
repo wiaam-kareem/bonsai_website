@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #00b289;
+  --background-color: white;
+  --heading-text-color: #003c2f;
+  --card-background-color: white;
+  --regular-text-color: #65816d;
+  --caption-text-color: #808080;
+  --caption-text-color-lighter: #bab9b9;
+  --secondary-color: #09a6f4;
+  --color-hover: #f9f9f9;
+  --background-color-dark: #1c1c27;
+  /* font sizes */
+  --fs-6xl: 2.6rem;
+  --fs-5xl: 2.4rem;
+  --fs-4xl: 2.2rem;
+  --fs-3xl: 2.2rem;
+  --fs-2xl: 2rem;
+  --fs-1xl: 1.8rem;
+  --fs-large: 1.6rem;
+  --fs-small: 1.4rem;
+  --fs-xsmall: 1.2rem;
+  --fs-2xsmall: 1rem;
+  --fs-3xsmall: 0.8rem;
+  --fs-4xsmall: 0.6rem;
+  --page-width-ratio: 75vw;
+  /* padding and margins */
+  --p-m-01: 10px;
+  --p-m-12: 12px;
+  --p-m-10: 10px;
+  --p-m-14: 14px;
+  --p-m-16: 16px;
+  --p-m-20: 20px;
+  --p-m-30: 30px;
+  --p-m-35: 35px;
+  --p-m-50: 50px;
+  --p-m-60: 60px;
+  --p-m-120: 120px;
+  /* border radius */
+  --regular-border-radius: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 li {
+  color: var(--heading-text-color);
+}
+p {
+  color: var(--regular-text-color);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container {
+  width: var(--page-width-ratio);
+  margin-left: auto;
+  margin-right: auto;
+}
+.special-text {
+  color: var(--primary-color);
+}
